@@ -470,7 +470,6 @@ nav ul li:hover .dropdown {
 }
 
 .footer {
-    margin-top: auto;
     padding: 20px 50px;
     background-color: white;
     border-top: 1px solid #ddd;
@@ -478,7 +477,7 @@ nav ul li:hover .dropdown {
     font-size: 0.9em;
 }
 
-.footer .footer-top {
+.footer-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -486,43 +485,58 @@ nav ul li:hover .dropdown {
     flex-wrap: wrap;
 }
 
-.footer .footer-links {
+.footer-links {
     display: flex;
     gap: 15px;
     font-weight: bold;
 }
 
-.footer .footer-links a {
+.footer-links a {
     text-decoration: none;
     color: black;
     font-size: 1em;
 }
 
-.footer .social-icons {
+.social-icons {
     display: flex;
     gap: 10px;
 }
 
-.footer .social-icons a {
+.social-icons a {
     text-decoration: none;
     font-size: 1.2em;
     color: black;
 }
 
-.footer .footer-bottom {
+.footer-middle {
+    margin: 10px 0;
+}
+
+.footer-middle .made-by {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.footer-middle .made-by strong {
+    color: #007BFF; /* Синий акцент */
+}
+
+.footer-bottom {
     margin-top: 20px;
     font-size: 0.8em;
 }
 
-.footer .footer-bottom a {
+.footer-bottom a {
     text-decoration: none;
     color: black;
     margin-left: 10px;
 }
 
-.footer .footer-bottom a:hover {
+.footer-bottom a:hover {
     text-decoration: underline;
 }
+
 
 .course-requests-button {
     display: inline-block;
@@ -541,4 +555,66 @@ nav ul li:hover .dropdown {
 .course-requests-button:hover {
     background: black;
     color: white;
+}
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    header .logo img {
+        max-height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-container {
+        padding: 20px;
+    }
+
+    .profile-avatar-info {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .profile-avatar-info img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-avatar-info .info h1 {
+        font-size: 2em;
+    }
+
+    .profile-avatar-info .info p {
+        font-size: 1em;
+    }
+
+    .profile-actions button {
+        font-size: 1em;
+        padding: 10px 15px;
+    }
+
+    .works-section h2 {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        padding: 10px;
+        font-size: 0.8em;
+    }
+
+    .footer .footer-top {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

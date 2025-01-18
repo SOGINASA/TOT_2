@@ -409,59 +409,72 @@ nav ul li:hover .dropdown {
         position: relative;
     }
     .footer {
-        margin-top: auto;
         padding: 20px 50px;
         background-color: white;
         border-top: 1px solid #ddd;
         text-align: center;
         font-size: 0.9em;
     }
-
-    .footer .footer-top {
+    
+    .footer-top {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
         flex-wrap: wrap;
     }
-
-    .footer .footer-links {
+    
+    .footer-links {
         display: flex;
         gap: 15px;
         font-weight: bold;
     }
-
-    .footer .footer-links a {
+    
+    .footer-links a {
         text-decoration: none;
         color: black;
         font-size: 1em;
     }
-
-    .footer .social-icons {
+    
+    .social-icons {
         display: flex;
         gap: 10px;
     }
-
-    .footer .social-icons a {
+    
+    .social-icons a {
         text-decoration: none;
         font-size: 1.2em;
         color: black;
     }
-
-    .footer .footer-bottom {
+    
+    .footer-middle {
+        margin: 10px 0;
+    }
+    
+    .footer-middle .made-by {
+        font-size: 1em;
+        font-weight: bold;
+        color: #333;
+    }
+    
+    .footer-middle .made-by strong {
+        color: #007BFF; /* Синий акцент */
+    }
+    
+    .footer-bottom {
         margin-top: 20px;
         font-size: 0.8em;
     }
-
-    .footer .footer-bottom a {
+    
+    .footer-bottom a {
         text-decoration: none;
         color: black;
         margin-left: 10px;
     }
-
-    .footer .footer-bottom a:hover {
+    
+    .footer-bottom a:hover {
         text-decoration: underline;
-    }
+    }    
 
     body {
         display: flex;
@@ -472,3 +485,139 @@ nav ul li:hover .dropdown {
     .content {
         flex: 1;
     }
+
+
+    @media (max-width: 768px) {
+        header {
+            flex-wrap: wrap;
+            padding: 10px 20px;
+        }
+    
+        .hero h1 {
+            font-size: 2em;
+        }
+    
+        .hero p {
+            font-size: 1em;
+        }
+    
+        .feature-card {
+            width: 100%;
+        }
+    
+        .efficiency-section {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .efficiency-text {
+            max-width: 100%;
+        }
+    
+        .how-it-works .cards {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .footer {
+            text-align: center;
+        }
+    
+        nav ul {
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+    
+        .buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .feature-cards {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+    
+        .efficiency-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    
+        .efficiency-text ul li {
+            font-size: 0.9em;
+        }
+    
+        .footer .footer-top {
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .footer .footer-links,
+        .footer .social-icons {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .student-table {
+            font-size: 0.9em;
+        }
+    
+        .student-table th,
+        .student-table td {
+            padding: 5px;
+        }
+    
+        .filter-buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .dropdown-menu {
+            position: static;
+            width: 100%;
+            box-shadow: none;
+        }
+    
+        .dropdown-menu div {
+            padding: 10px;
+            text-align: center;
+        }
+    
+        .content {
+            padding: 10px;
+        }
+    
+        .image-placeholder img {
+            max-width: 100%;
+            height: auto;
+        }
+    
+        .profile-avatar-info {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+    
+        .profile-avatar-info img {
+            width: 120px;
+            height: 120px;
+        }
+    
+        .profile-actions {
+            gap: 15px;
+        }
+    
+        .profile-actions .top-buttons,
+        .profile-actions .bottom-buttons {
+            flex-direction: column;
+            gap: 10px;
+        }
+    
+        .filter-buttons .filter {
+            width: 100%;
+        }
+    }
+    

@@ -524,6 +524,10 @@ nav ul li:hover .dropdown {
     text-decoration: underline;
 }
 
+.footer-middle .made-by strong {
+    color: #007BFF; /* Синий акцент */
+}
+
 table {
     width: 90%; /* Увеличен размер таблицы */
     max-width: 1200px; /* Максимальная ширина для больших экранов */
@@ -814,4 +818,113 @@ table td {
 
 .nickname, .course-name {
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        padding: 10px 20px;
+    }
+
+    header .logo img {
+        max-height: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-container {
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .profile-avatar-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .profile-avatar-info img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-avatar-info .info h1 {
+        font-size: 2em;
+    }
+
+    .profile-avatar-info .info p {
+        font-size: 1em;
+    }
+
+    .profile-actions {
+        gap: 15px;
+    }
+
+    .profile-actions .top-buttons,
+    .profile-actions .bottom-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .works-section h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .works-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .feature-card,
+    .how-it-works .card {
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+        display: block; /* Добавлено для предотвращения выхода таблицы за рамки */
+        font-size: 0.9em;
+        margin: 0 auto; /* Центрирование таблицы */
+    }
+
+    table th, table td {
+        padding: 10px;
+        word-break: break-word; /* Для предотвращения выхода текста за границы ячеек */
+    }
+
+    .actions button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .actions button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+
+    .footer .footer-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footer .footer-links,
+    .footer .social-icons {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
