@@ -18,14 +18,14 @@
         </ul>
     </nav>
     <div class="buttons">
-        <button>Бот</button>
+        <button onclick="window.location.href='https://web.telegram.org/a/#7674978957'">Бот</button>
         <button class="filled">Кнопка</button>
     </div>
 </header>
 
 <div class="profile-container">
     <div class="profile-header">
-        <div class="profile-avatar">
+        <div class="profile-avatar-info">
             <img src="{{url_for('static', filename='/img/avatar-placeholder.png')}}" alt="Аватар">
             <div class="info">
                 <h1>Имя Учителя</h1>
@@ -33,10 +33,17 @@
             </div>
         </div>
         <div class="profile-actions">
-            <button>Изменить профиль</button>
-            <button>Посмотреть пароль</button>
-        </div>
+            <div class="top-buttons">
+                <a href="/prof_chang" class="course-requests-button">Изменить профиль</a>
+                <button>Посмотреть пароль</button>
+            </div>
+            <div class="bottom-buttons">
+                <a href="/tasks" class="course-requests-button">Добавить задание</a>
+                <a href="/applications" class="course-requests-button">Заявки на курсы</a>
+            </div>
+        </div>                         
     </div>
+    
 
     <div class="works-section">
         <h2>Последние работы учеников</h2>
@@ -73,7 +80,7 @@
             <a href="https://web.telegram.org/a/#7674978957">Бот в телеграме</a>
         </div>
         <div class="social-icons">
-            <a href="https://www.instagram.com/"><img src="{{url_for('static', filename='/img/image3.png')}}" alt=""></a> <!-- Instagram -->
+            <a href="https://www.instagram.com/_artem___p_/"><img src="{{url_for('static', filename='/img/image3.png')}}" alt=""></a> <!-- Instagram -->
         </div>
     </div>
     <div class="footer-bottom">

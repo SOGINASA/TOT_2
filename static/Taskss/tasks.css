@@ -542,3 +542,118 @@ nav ul li:hover .dropdown {
     background: black;
     color: white;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.templates {
+    flex: 1;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.templates h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.template-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.template-item {
+    flex: 1 1 calc(33.33% - 10px);
+    height: 100px;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.template-item:hover {
+    background: #e0e0e0;
+}
+
+.form-section {
+    flex: 2;
+    padding: 20px;
+}
+
+.form-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    border: none;
+    background: black;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background: #333;
+}
